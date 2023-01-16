@@ -1,6 +1,10 @@
 <script setup>
 import { ref, watch } from "vue";
 import axios from "axios";
+import {useStore} from "../store/index.js"
+
+const store = useStore();
+
 const props = defineProps({
   show: Boolean,
   id: String,
